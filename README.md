@@ -32,3 +32,8 @@ OHLCV data of 1300 days that are included in pyupbit
 # 4. Algorithm Functions:
 needs adjustments
 
+# 5. How it Works:
+
+Message alerts from Slack
+![스크린샷 2024-05-30 092344](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/8fae155a-ada9-4a49-8441-097dd58e6bf3)
+

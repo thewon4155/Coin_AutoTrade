@@ -1,0 +1,49 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use('fivethirtyeight')
+
+#BB function
+def bollinger_bands(data, window_size = 30):
+    rolling_mean = data['Close'].rolling(window = window_size).mean() #simple moving avg (SMA 30)
+    rolling_std = data['Close'].rolling(window = window_size).std() #standard deviation
+    data['UpperBand'] = rolling_mean + (2 * rolling_std)
+    data['LowerBand'] = rolling_mean - (2 * rolling_std)
+    return data
+
+#RSI function
+def RSI(data, window = 13):
+    delta = data['Close'].diff()
+    gain = delta.where(delta > 0 , 0)
+    loss = delta.where(delta < 0, 0)
+    avg_gain = gain.rolling(window).mean()
+    avg_loss = loss.rolling(window).mean()
+    RS = avg_gain / avg_loss
+    RSI = 100 - (100/(1+RS))
+    data['RSI'] = RSI
+    data['Overbought'] = 70
+    data['Oversold'] = 30
+    return data
+
+#Buy when close price goes below the LB and the RSI IS less than 30, no position
+#Sell when close price goes over the UB and the RSI is greater than 70, no position
+
+def strategy(data):
+    position = 0
+    buy_price = []
+    sell_price = []
+    for i in range(len(data)):
+        if data['Close'][i] < data['LowerBand'][i] and data['RSI'][i] < data['Oversold'] and position == 0:
+            position = 1
+            buy_price.append(data['Close'][i])
+            sell_price.append(np.nan)
+        elif data['Close'][i] > data['UpperBand'][i] and data['RSI'][i] > data['Overbought'][i] and position == 1:
+            position = 0
+            sell_price.append(data['Close'][i])
+            buy_price.append(np.nan)
+        else:
+            buy_price.append(np.nan)
+            sell_price.append(np.nan)
+return (buy_price, sell_price)
+
+########data from Upbit required###############

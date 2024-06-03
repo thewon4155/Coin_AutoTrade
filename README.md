@@ -15,6 +15,8 @@ coin_autotrade_ver1: Default K for Volatility Strategy
 
 coin_autotrade_ver2: adjustable K for Volatility Strategy
 
+coin_autotrade_ver3: adjustable K, Bollinger Band, RSI Strategy applied
+
 # 2. Software used:
 
 Main Framework: Python
@@ -25,12 +27,14 @@ Backtesting: Python, Excel
 
 Main Module: pyupbit, openpyxl, requests
 
+Visualization: matplotlib
+
 # 3. Backtesting(20201112-20240528):
 
 OHLCV data of 1300 days that are included in pyupbit
 
 # 4. Algorithm Functions:
-needs adjustments
+needs explanation
 
 # 5. How it Works:
 

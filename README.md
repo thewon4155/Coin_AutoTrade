@@ -25,7 +25,7 @@ Open API: pyupbit, Slack
 
 Backtesting: Python, Excel
 
-Main Module: pyupbit, openpyxl, requests
+Main Module: pyupbit, openpyxl, requests, pandas
 
 Visualization: matplotlib
 

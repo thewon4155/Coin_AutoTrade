@@ -43,3 +43,18 @@ needs explanation
 Message alerts from Slack
 ![스크린샷 2024-05-30 092344](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/8fae155a-ada9-4a49-8441-097dd58e6bf3)
 
+# 6. VM: SSH Connection
+also needed to be created in a virtual environment + every function must be executed with sudo.
+
+sudo python3 -m venv .venv
+sudo -s
+source .venv/bin/activate
+
+python3 get-pip.py
+pip install pandas
+pip install requests
+pip install openpyxl
+pip install pyupbit
+pip install matplotlib
+
+Then, run the codes on the GCP server.

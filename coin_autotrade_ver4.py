@@ -25,7 +25,7 @@ def get_targetPrice(df, K):
         raise ValueError("DataFrame does not contain enough data")
     price_range = df['high'].iloc[-2] - df['low'].iloc[-2]
     return df['open'].iloc[-1] + price_range * K
-
+    
 # Function to buy all available balance of a coin
 def buy_all(coin):
     balance = upbit.get_balance("KRW") * 0.9995
@@ -136,6 +136,11 @@ if __name__ == '__main__':
                 print(f"{now.strftime('%y/%m/%d %H:%M:%S')}\t\tBalance: {cur_balance} KRW \t\tYield: {((cur_balance / start_balance) - 1) * 100} % \t\tNew targetPrice: {targetPrice} KRW")
                 post_message(f"새로운 장 시작\n수익률: {((cur_balance / start_balance) - 1) * 100} %\n잔액: {cur_balance} 원\n목표매수가: {targetPrice} 원")
                 time.sleep(60)
+
+            # Periodically update the target price (e.g., every hour)
+            if now.minute == 0:
+                df = pyupbit.get_ohlcv(coin, count=2, interval="minute1")
+                targetPrice = get_targetPrice(df, get_best_K(coin, fees))
 
             # Trading logic within each minute
             df = pyupbit.get_ohlcv(coin, interval="minute1", count=30)

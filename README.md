@@ -17,6 +17,8 @@ coin_autotrade_ver2: adjustable K for Volatility Strategy
 
 coin_autotrade_ver3: adjustable K, Bollinger Band, RSI Strategy applied
 
+coin_autotrade_ver4: ver3 + comparison adjustments for pandas series using iloc (have same structure with ver3)
+
 # 2. Software used:
 
 Main Framework: Python

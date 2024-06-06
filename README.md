@@ -23,7 +23,7 @@ coin_autotrade_ver4: ver3 + comparison adjustments for pandas series using iloc 
 
 Main Framework: Python
 
-Open API: pyupbit, Slack
+Open API: pyupbit, Slack, Google Sheets
 
 Backtesting: Python, Excel
 

@@ -1,5 +1,6 @@
 # Coin_AutoTrade
-Coin AutoTrading program IAW Pyupbit, Slack API
+
+Coin AutoTrading program IAW Pyupbit, Slack, Google Spreadsheet, GCP Server
 
 
 # 0. Project Abstract (2024.05.13 ~ 2024.06.12)
@@ -85,3 +86,6 @@ upload 3 files of auth, coin_autotrade_ver4.py, requirements.txt
 pip install -r requirements.txt                                 <- this will allow pip install pandas, requests, openpyxl, pyupbit, matplotlib
 sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime       <- set local time to Korea
 nohup python3.12 coin_autotrade_ver4. py                        <- Then, run the codes on the GCP server without interruption.
+
+# 7. TroubleShooting / S.A.
+https://turquoise-winter-de1.notion.site/5-407f257cf79f4e55b54b1c3c9fe03aa1?pvs=4

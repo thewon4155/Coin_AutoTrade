@@ -20,6 +20,7 @@ coin_autotrade_ver3: adjustable K, Bollinger Band, RSI Strategy applied
 
 coin_autotrade_ver4: ver3 + comparison adjustments for pandas series using iloc (have same structure with ver3)
 
+coin_autotrade_ver5: ver4 + more messages on Slack + DB for buy/sell signals using mysql
 
 # 2. Software used:
 
@@ -32,6 +33,8 @@ Backtesting: Python, Excel
 Main Module: pyupbit, openpyxl, requests, pandas
 
 Visualization: matplotlib
+
+DB: mysql
 
 
 # 3. Backtesting(20201112-20240528):

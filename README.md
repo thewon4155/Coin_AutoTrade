@@ -9,6 +9,8 @@ an AutoTrading program for designated Coin with multiple algorithms using Upbit 
 
 ![image](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/5f655c9c-dd3b-4c68-b001-ddd732eb6a3b)
 
+![image](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/8ca7a6b8-7c2e-4836-98b0-daf7b8dcb943)
+
 
 # 1. Version upgrades:
 
@@ -32,7 +34,7 @@ Backtesting: Python, Excel
 
 Main Module: pyupbit, openpyxl, requests, pandas
 
-Visualization: matplotlib
+Visualization: matplotlib, Django
 
 DB: mysql
 

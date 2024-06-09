@@ -68,8 +68,6 @@ OHLCV sample data of 1300 days that are included in pyupbit applied to each vers
 - Price > Upper Band,
 - RSI = Overbought 라고 인식이 되어야 upbit에 매도 신호 전달 → Slack에 잔액/수익률 등의 내용 전달
 
-![image](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/c2116100-a28b-4cb3-a541-9a4ecc8b2eb1)
-
 
 # 5. How it Works:
 
@@ -78,8 +76,8 @@ Message alerts from Slack
 
 
 # 6. GCP VM: SSH Connection
-also needed to be created in a virtual environment + every function must be executed with sudo.
-SSH are made with Ubuntu, python version must be updated to 3.12.1 (given status-quo is python 3.11.2)
+also needed to be created in a virtual environment + every function must be executed with sudo(admin execution).
+SSH are made with Ubuntu and python version must be updated to 3.12.1 (given status-quo is python 3.11.2).
 
 sudo python3 -m venv .venv
 sudo -s

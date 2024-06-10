@@ -9,7 +9,8 @@ an AutoTrading program for designated Coin with multiple algorithms using Upbit 
 
 ![image](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/5f655c9c-dd3b-4c68-b001-ddd732eb6a3b)
 
-![image](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/8ca7a6b8-7c2e-4836-98b0-daf7b8dcb943)
+![image](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/76ac024e-2a08-466b-b7c1-0fea530e309a)
+
 
 
 # 1. Version upgrades:
@@ -32,11 +33,13 @@ Open API: pyupbit, Slack, Google Sheets
 
 Backtesting: Python, Excel
 
-Main Module: pyupbit, openpyxl, requests, pandas
+Server: Google Cloud Platform(GCP)
+
+DB: SQLite3
 
 Visualization: matplotlib, Django
 
-DB: SQLite3
+Main Module: pyupbit, openpyxl, requests, pandas
 
 
 # 3. Backtesting(20201112-20240528):

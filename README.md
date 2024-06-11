@@ -1,6 +1,6 @@
 # Coin_AutoTrade
 
-Coin AutoTrading program IAW Pyupbit, Slack, Google Spreadsheet, GCP Server
+Coin AutoTrading program using Python
 
 
 # 0. Project Abstract (2024.05.13 ~ 2024.06.12)
@@ -24,6 +24,7 @@ coin_autotrade_ver3: adjustable K, Bollinger Band, RSI Strategy applied
 coin_autotrade_ver4: ver3 + comparison adjustments for pandas series using iloc (have same structure with ver3)
 
 coin_autotrade_ver5: ver4 + more messages on Slack + DB for buy/sell signals using SQLite3
+
 
 # 2. Software used:
 
@@ -92,6 +93,7 @@ upload 3 files of auth, coin_autotrade_ver5.py, requirements.txt
 pip install -r requirements.txt                                 <- this will allow pip install pandas, requests, openpyxl, pyupbit, matplotlib
 sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime       <- set local time to Korea
 nohup python3.12 coin_autotrade_ver5. py                        <- Then, run the codes on the GCP server without interruption.
+
 
 # 7. TroubleShooting / S.A.
 https://turquoise-winter-de1.notion.site/5-407f257cf79f4e55b54b1c3c9fe03aa1?pvs=4

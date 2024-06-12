@@ -43,9 +43,12 @@ Visualization: matplotlib, Django
 Main Module: pyupbit, openpyxl, requests, pandas
 
 
-# 3. Backtesting(20201112-20240528):
+# 3. Backtesting for ver3(20201115-20240531):
 
 OHLCV sample data of 1300 days that are included in pyupbit applied to each version algorithm
+![Closing Price with Bollinger Bands](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/dfb2ab4f-5638-4b54-b4ba-290980cd96f4)
+![RSI over Time](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/a50d31eb-63c0-4335-bd1c-173ee737920f)
+![DRR, CRR, DD over Time](https://github.com/thewon4155/Coin_AutoTrade/assets/99013724/02bc5e5f-c176-4cf3-9906-abf2b17b1365)
 
 
 # 4. Algorithm Functions:
